@@ -1,0 +1,14 @@
+Acessar o postgres
+sudo -u postgres psql
+
+Criar usuário e dar permissão de criar database:
+CREATE USER onebitflix CREATEDB ENCRYPTED PASSWORD 'onebitflix';
+
+Excluir usuário:
+DROP USER manuel;
+
+Listar usuários:
+\du
+
+Criar database utilizando o sequelize-cli
+npx sequelize-cli db:create
