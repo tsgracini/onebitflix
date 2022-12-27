@@ -7,6 +7,12 @@ CREATE USER onebitflix CREATEDB ENCRYPTED PASSWORD 'onebitflix';
 Excluir usuário:
 DROP USER manuel;
 
+Selecionar a base de dados onebitflix_development
+\c onebitflix_development
+
+Selecionar a tabela de usuários
+SELECT * FROM users;
+
 Listar usuários:
 \du
 
