@@ -23,6 +23,18 @@ Executar uma migrations que ainda não foram executadas:
 npx sequelize-cli db:migrate
 
 
+Criar uma seeder(scripts para criação de dados automaticos no database)
+npx sequelize-cli seed:generate --name seed-categories-table
+
+executar as seeders(seeders podem ser executadas quantas vezes forem necessárias):
+npx sequelize-cli db:seed --seed src/database/seeders/20221226111802-seed-courses-table.js
+
+executar todas as seeds:
+npx sequelize-cli db:seed:all
+
+remover todas as seeds:
+npx sequelize-cli db:seed:undo:all
+
 =================================================================
 
 Gerando arquivo tsconfig.json
